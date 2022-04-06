@@ -1,6 +1,4 @@
 a {
-    font-family: 'Kanit', sans-serif;
-    font-weight: 300;
     font-size: x-large;
     text-decoration: none;
 }
@@ -15,11 +13,4 @@ a {
 
 .btn {
     margin-right: 80px;
-}
-
-.navbar-toggler {
-    background-color: #A1DCE1;
-    border: none;
-    padding: 10px 6px;
-    outline: none;
 }

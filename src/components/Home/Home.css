@@ -1,0 +1,10 @@
+.bg-img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .home {
+      width: 100%;
+    }
+  }

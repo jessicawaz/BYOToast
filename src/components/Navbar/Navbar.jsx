@@ -10,18 +10,16 @@ const Navbar = () => {
           <img src={toasty} alt="Logo" height={208} />
         </a>
         <button
-          class="navbar-toggler ms-auto"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#n_bar"
-          aria-controls="navbarNavAltMarkup"
-          aria-label="Toggle navigation"
+          class="navbar-toggler bg-light"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div
           class="collapse navbar-collapse justify-content-between"
-          id="navbarSupportedContent"
+          id="collapsibleNavbar"
         >
           <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
             <li class="nav-item">
@@ -50,6 +48,7 @@ const Navbar = () => {
                 href="/"
                 data-toggle="dropdown"
                 aria-haspopup="true"
+                role="button"
                 aria-expanded="false"
               >
                 Menu

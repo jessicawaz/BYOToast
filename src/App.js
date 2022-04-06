@@ -1,15 +1,17 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./components/About/About.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
+import Home from "./components/Home/Home.jsx";
+// import Contact from './components/Contact/Contact.jsx';
 
 function App() {
   return (
-    <BrowserRouter>
+    <div>
       <Navbar />
-      <Routes>
-        <Route path="/about" element={<About />} />
-      </Routes>
-    </BrowserRouter>
+      <Home />
+      <About />
+      {/* <Contact /> */}
+    </div>
   );
 }
 
