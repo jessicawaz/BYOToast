@@ -3,14 +3,7 @@ a {
     text-decoration: none;
 }
 
-.navbar-custom {
-    background-color: white;
-}
-
-.nav-item {
-    margin-right: 80px;
-}
-
-.btn {
-    margin-right: 80px;
+i {
+    color: white;
+    padding-left: 1rem;
 }

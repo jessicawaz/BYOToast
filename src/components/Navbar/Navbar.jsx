@@ -1,83 +1,90 @@
-import React from "react";
+import React, { useState } from "react";
 import toasty from "../res/toasty.png";
 import "../Navbar/Navbar.css";
 
 const Navbar = () => {
+  const [isActive, setIsActive] = useState(false);
+
   return (
-    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/">
-          <img src={toasty} alt="Logo" height={208} />
+    <nav
+      className="navbar is-spaced is-dark"
+      id="my-nav"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div className="navbar-brand">
+        <a
+          href="/home"
+          className="navbar-item"
+          style={{ "font-weight": "bold", color: "turquoise" }}
+        >
+          keep it toasty.
         </a>
-        <button
-          type="button"
-          class="navbar-toggler bg-light"
-          data-toggle="collapse"
-          data-target="#collapsibleNavbar"
+
+        <a
+          onClick={() => {
+            setIsActive(!isActive);
+          }}
+          role="button"
+          id="burger"
+          className={`navbar-burger burger ${isActive ? "is-active" : ""}`}
+          is-active
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicEx"
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-between"
-          id="collapsibleNavbar"
-        >
-          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">
-                Home
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div className={`navbar-menu ${isActive ? "is-active" : ""}`}>
+        <div className="navbar-start">
+          <a href="/home" className="navbar-item">
+            Home
+          </a>
+          <a href="/about" className="navbar-item">
+            About
+          </a>
+          <a href="/order" className="navbar-item">
+            Order
+          </a>
+          <a href="/contact" className="navbar-item">
+            Contact
+          </a>
+          <div className="navbar-item has-dropdown is-hoverable">
+            <a href="/menu" className="navbar-link is-arrowless">
+              Menu
+            </a>
+            <div className="navbar-dropdown is-boxed">
+              <a href="/drinks" className="navbar-item">
+                Drinks
               </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/">
-                Order
+              <hr class="navbar-divider"></hr>
+              <a href="/toasts" className="navbar-item">
+                Toasts
               </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/">
-                Contact
+              <hr class="navbar-divider"></hr>
+              <a href="/bowls" className="navbar-item">
+                Bowls
               </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/">
-                About
-              </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="/"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                role="button"
-                aria-expanded="false"
-              >
-                Menu
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item" href="/">
-                    Drinks
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/">
-                    Toasts
-                  </a>
-                </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/">
-                    Bowls
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <ul className="navbar-nav ml-auto">
-            <button className="btn">Sign Up</button>
-          </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="navbar-end">
+          <div className="navbar-item">
+            <a href="/">
+              <i className="fab fa-instagram" />
+            </a>
+            <a href="/">
+              <i className="fab fa-twitter" />
+            </a>
+            <a href="/">
+              <i className="fab fa-yelp" />
+            </a>
+          </div>
         </div>
       </div>
     </nav>
