@@ -4,18 +4,14 @@
     font-weight: 300;
 }
 
-.about {
-    font-family: 'Kanit', sans-serif;
-    font-weight: 300;
+.about h1 {
+    font-size: 40px;
+    padding-bottom: 30px;
+    font-weight: bold;
+    color: whitesmoke
 }
 
-.col-4 img {
-    height: 50%;
-}
-
-.container {
-    padding-top: 30px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+.is-vcentered {
+    display: flex;
+    padding-top: 60px;
 }

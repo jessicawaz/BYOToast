@@ -1,5 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
-import toasty from "../res/toasty.png";
 import "../Navbar/Navbar.css";
 
 const Navbar = () => {
@@ -16,7 +16,7 @@ const Navbar = () => {
         <a
           href="/home"
           className="navbar-item"
-          style={{ "font-weight": "bold", color: "turquoise" }}
+          style={{ "font-weight": "bold", color: "#919463" }}
         >
           keep it toasty.
         </a>
