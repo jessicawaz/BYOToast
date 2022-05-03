@@ -14,9 +14,9 @@ const Navbar = () => {
     >
       <div className="navbar-brand">
         <a
-          href="/home"
+          href="/"
           className="navbar-item"
-          style={{ "font-weight": "bold", color: "#919463" }}
+          style={{ "font-weight": "bold", color: "#8db4ad" }}
         >
           keep it toasty.
         </a>
@@ -41,7 +41,7 @@ const Navbar = () => {
 
       <div className={`navbar-menu ${isActive ? "is-active" : ""}`}>
         <div className="navbar-start">
-          <a href="/home" className="navbar-item">
+          <a href="/" className="navbar-item">
             Home
           </a>
           <a href="/about" className="navbar-item">
@@ -54,9 +54,7 @@ const Navbar = () => {
             Contact
           </a>
           <div className="navbar-item has-dropdown is-hoverable">
-            <a href="/menu" className="navbar-link is-arrowless">
-              Menu
-            </a>
+            <a className="navbar-link is-arrowless">Menu</a>
             <div className="navbar-dropdown is-boxed">
               <a href="/drinks" className="navbar-item">
                 Drinks
@@ -76,13 +74,13 @@ const Navbar = () => {
         <div className="navbar-end">
           <div className="navbar-item">
             <a href="/">
-              <i className="fab fa-instagram" />
+              <i className="fab fa-instagram social-link" />
             </a>
             <a href="/">
-              <i className="fab fa-twitter" />
+              <i className="fab fa-twitter social-link" />
             </a>
             <a href="/">
-              <i className="fab fa-yelp" />
+              <i className="fab fa-yelp social-link" />
             </a>
           </div>
         </div>
