@@ -47,9 +47,6 @@ const Navbar = () => {
           <a href="/about" className="navbar-item">
             About
           </a>
-          <a href="/order" className="navbar-item">
-            Order
-          </a>
           <a href="/contact" className="navbar-item">
             Contact
           </a>

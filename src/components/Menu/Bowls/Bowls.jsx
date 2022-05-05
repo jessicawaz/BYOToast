@@ -9,6 +9,7 @@ const Bowls = () => {
             <div className="card">
               <header className="card-header">
                 <p className="card-header-title">BYOBowls</p>
+                <p className="p-4">$10.99</p>
               </header>
 
               <p className="p-3" style={{ fontSize: "12px" }}>
@@ -88,7 +89,47 @@ const Bowls = () => {
               </header>
 
               <div className="card-content">
-                <div className="content"></div>
+                <div className="content">
+                  <div className="card">
+                    <div className="card-header">
+                      <p className="card-header-title">Bowl 1</p>
+                    </div>
+                    <div className="card-image">image placeholder</div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="card-content">
+                <div className="content">
+                  <div className="card">
+                    <div className="card-header">
+                      <p className="card-header-title">Bowl 2</p>
+                    </div>
+                    <div className="card-image">image placeholder</div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="card-content">
+                <div className="content">
+                  <div className="card">
+                    <div className="card-header">
+                      <p className="card-header-title">Bowl 3</p>
+                    </div>
+                    <div className="card-image">image placeholder</div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="card-content">
+                <div className="content">
+                  <div className="card">
+                    <div className="card-header">
+                      <p className="card-header-title">Bowl 4</p>
+                    </div>
+                    <div className="card-image">image placeholder</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

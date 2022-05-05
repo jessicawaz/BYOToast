@@ -9,6 +9,7 @@ const Toasts = () => {
             <div className="card">
               <header className="card-header">
                 <p className="card-header-title">BYOToast</p>
+                <p className="p-4">$10.99</p>
               </header>
 
               <div className="card-content">
@@ -56,7 +57,7 @@ const Toasts = () => {
 
                   <h7 className="p-3 has-text-weight-bold">Savory</h7>
                   <div className="columns is-mobile is-desktop">
-                    <div className="column is-narrow is-half">
+                    <div className="column p-1 is-half">
                       <ul>
                         <li>Tomato</li>
                         <li>Pickled Red Onions</li>
@@ -71,7 +72,7 @@ const Toasts = () => {
                       </ul>
                     </div>
 
-                    <div className="column is-narrow is-half">
+                    <div className="column p-1 is-half">
                       <ul>
                         <li>Sliced Avocado</li>
                         <li>Radish</li>
@@ -141,7 +142,51 @@ const Toasts = () => {
               </header>
 
               <div className="card-content">
-                <div className="content"></div>
+                <div className="content">
+                  <div className="card">
+                    <div className="card-header">
+                      <p className="card-header-title">Toast 1</p>
+                      <p className="p-2">$11.99</p>
+                    </div>
+                    <div className="card-image">image placeholder</div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="card-content">
+                <div className="content">
+                  <div className="card">
+                    <div className="card-header">
+                      <p className="card-header-title">Toast 2</p>
+                      <p className="p-2">$11.99</p>
+                    </div>
+                    <div className="card-image">image placeholder</div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="card-content">
+                <div className="content">
+                  <div className="card">
+                    <div className="card-header">
+                      <p className="card-header-title">Toast 3</p>
+                      <p className="p-2">$11.99</p>
+                    </div>
+                    <div className="card-image">image placeholder</div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="card-content">
+                <div className="content">
+                  <div className="card">
+                    <div className="card-header">
+                      <p className="card-header-title">Toast 4</p>
+                      <p className="p-2">$11.99</p>
+                    </div>
+                    <div className="card-image">image placeholder</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
